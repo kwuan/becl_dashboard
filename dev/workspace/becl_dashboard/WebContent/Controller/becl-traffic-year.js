@@ -17,10 +17,10 @@ $(document).ready(function() {
 		$.ajax({
 			url:"../Model/Tap1/chart1_groupByPlaza.jsp",
 			type:"get",
-			datatype:"json",
+			dataType:"json",
 			data:{"paramYear":$("#paramYear").val()},
 			success:function(data){
-				//console.log(data);
+				console.log(data);
 				var dataDump = [["อโศก 1",44835],["Mikee",30000]];
 				var option=[];
 				option['pointLabels'] = true;
